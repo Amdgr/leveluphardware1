@@ -22,7 +22,7 @@
 
 	<main>
 
-	<p> hello world</p>
+	
 		<h2>High-end Gaming gear</h2>
 		<h3> In Breda</h3>
 		<div class="overleveluphardware">
