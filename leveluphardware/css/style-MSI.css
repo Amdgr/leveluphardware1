@@ -1,0 +1,222 @@
+:root {
+  --achtergrond: #23272e;
+  --header: #2c2f33;
+  --tekst: #e0e0e0;
+  --neon1: #26ff00;
+  --neon2: #ed1c1c;
+  --neonaccent1: #cfffc7;
+  --neonaccent2: #fcd9d9;
+  --schaduw-neon1: 0 0 15px var(--neon1), 0 0 25px var(--neon1), 0 0 40px var(--neon1);
+  --schaduw-neon2: 0 0 15px var(--neon2), 0 0 25px var(--neon2), 0 0 40px var(--neon2);
+}
+
+body.light-mode {
+  --achtergrond: #F0EFEB;
+  --header: #E0DBD6;
+  --tekst: #222222;
+  --neon1: #11ff00;
+  --neon2: #00d0ff;
+  --neonaccent1: #000608;
+  --neonaccent2: #030007;
+  --schaduw-neon1: -3px -3px 0 var(--neon1), 3px -3px 0 var(--neon1), -3px 3px 0 var(--neon1), 3px 3px 0 var(--neon1);
+  --schaduw-neon2: -3px -3px 0 var(--neon2), 3px -3px 0 var(--neon2), -3px 3px 0 var(--neon2), 3px 3px 0 var(--neon2);
+}
+
+.oxanium-font {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.orbitron-font {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tilt-neon {
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+
+header {
+  background-color: var(--header);
+  height: 125px;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  position: relative;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--achtergrond);
+}
+
+main {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 25px
+}
+
+
+
+.links-webpaginas-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height: 100px;
+}
+
+.overleveluphardware {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.waarom-ons-list {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
+}
+
+.waarom-ons-list img {
+  margin-top: 40px;
+  border: 5px solid var(--neonaccent1);
+  border-radius: 50px;
+  box-shadow: var(--schaduw-neon1);
+}
+
+.waaromkiezenvoorons {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Oxanium", sans-serif;
+  color: var(--tekst);
+  font-size: xx-large;
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-family: "Tilt Neon", sans-serif;
+  margin-top: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: var(--neonaccent1);
+  text-shadow: var(--schaduw-neon1);
+  font-size: 60px;
+  margin-top: 0;
+}
+
+h2 {
+  color: var(--neonaccent2);
+  text-shadow: var(--schaduw-neon2);
+  font-size: 60px;
+}
+
+main p {
+  color: var(--tekst);
+  font-family: "Orbitron", sans-serif;
+  font-size: 25px;
+  max-width: 500px;
+}
+
+ul {
+  color: var(--tekst);
+  font-family: "Orbitron", sans-serif;
+  max-width: 500px;
+  font-size: 25px;
+}
+
+#nieuwsbrief {
+  box-sizing: border-box;
+  padding: 20px 80px;
+  background-color: var(--achtergrond);
+  color: var(--tekst);
+  border: 5px solid var(--neonaccent1);
+  border-radius: 15px; 
+  font-family: "Oxanium", sans-serif;
+  font-size: 22px;
+  box-shadow: 0 0 15px var(--neon1), 0 0 25px var(--neon1), 0 0 40px var(--neon1);
+  justify-content: center;
+}
+
+body.light-mode #nieuwsbrief {
+  box-shadow: none;
+}
+
+.nieuwsbrief-knop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.nieuwsbrief-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 20px auto;
+  color: var(--tekst);
+  font-family: "Orbitron", sans-serif;
+}
+
+.nieuwsbrief-form[hidden] {
+  display: none;
+}
+
+#nieuwsbrief-email {
+  padding: 12px;
+  border: 3px solid var(--neonaccent1);
+  border-radius: 8px;
+  background-color: var(--achtergrond);
+  color: var(--tekst);
+}
+
+.lightdark-mode {
+  display: flex;
+  position: absolute;
+  right: 20px;
+
+}
+
+#lightdark-mode-button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 40px 40px;
+  font-size: 20px;
+  color: var(--tekst);
+  gap: 15px;
+  background-color:var(--header);
+  border: solid 2px var(--header);
+}
