@@ -35,7 +35,7 @@
                 <article class="productkaart">
                     <img src="img/pc.png" alt="Custom gaming pc">
                     <h4>Custom Gaming PC</h4>
-                    <p class="prijs">€1999</p>
+                    <p class="prijs">€1989</p>
                     <p class="info">Op maat gemaakte desktop met topkwaliteit componenten voor maximale snelheid.</p>
                 </article>
 
