@@ -18,6 +18,36 @@
   text-shadow: var(--schaduw-neon1);
 }
 
+.categorie-navigatie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin: 30px 0;
+}
+
+.categorie-navigatie a {
+  padding: 10px 16px;
+  border: 1px solid var(--neonaccent1);
+  border-radius: 10px;
+  color: var(--tekst);
+  font-family: "Orbitron", sans-serif;
+  text-decoration: none;
+}
+
+.categorie-navigatie a:hover,
+.categorie-navigatie a:focus-visible {
+  box-shadow: var(--schaduw-neon1);
+}
+
+.productcategorie {
+  scroll-margin-top: 24px;
+}
+
+.productcategorie > h3 {
+  margin-top: 48px;
+}
+
 .producten-raster {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
